@@ -11,6 +11,11 @@
     cursor: pointer;
 }
 
+.cont{
+    display: none;
+}
+
+
 .vse{
     display: flex;
     justify-content: center;

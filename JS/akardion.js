@@ -1,15 +1,20 @@
-let but1 = document.querySelector('.btn1')
-let but2 = document.querySelector('.btn2')
-let but3 = document.querySelector('.btn3')
-let a = true
+let cont = document.querySelector('.cont')
 
-for (let index = 0; index < title.length; index++) {
-    title[index].addEventListener('click', function() {
-        if (!(this.classList.contains('active'))) {
-            for (let index = 0; index < title.length; index++) {
-                title[index].classList.remove('active')
-            }
-            this.classList.add('active')
+document.querySelectorAll('.btn1').forEach((el)=>{
+    el.addEventListener('click',() =>{
+
+        cont = el.nextElementSibling
+        console.log(cont)
+
+        if(cont.style.maxheight) {
+            DocumentType.querySelectorAll('.cont').forEach((el) => el.style.maxheight = null)
+        }
+
+        else{
+            DocumentType.querySelectorAll('.cont').forEach((el) => el.style.maxheight = null)
+            cont.style.maxHeight = cont.style.scrollHeight + 'px'
         }
     })
-}
+})
+
+
